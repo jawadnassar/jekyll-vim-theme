@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<script src="{{ site.baseurl }}/js/posts.js" defer></script>
+<div class="container" style="max-width: 1024px !important;">
+  <div class="back-top"><a href="{{ site.baseurl }}/">← back</a></div>
+  
+  <div class="header">{{ page.title }}</div>
+  
+  {% if page.date %} 
+    <time datetime='{{ page.date | date: "%F" }}' class="post-date">{{ page.date | date: "%B %d, %Y" }}</time>
+  {% endif %}
+  <div class="post-keys">j/k scroll ↓↑ | g/G top/bottom | b back</div>
+  <div class="divider"></div>
+  
+  <div class="post">
+    {{ content }}
+  </div>
+</div>

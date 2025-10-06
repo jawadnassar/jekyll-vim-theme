@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<script src="{{ site.baseurl }}/js/homepage.js" defer></script>
+<div class="container">
+  <div class="header cursor" tabindex="0" aria-label="Blog author name">{{ site.name }}</div>
+  <div class="tagline">{{ site.tagline }}</div>
+  <nav class="jump-nav" aria-label="Site Pages">
+    <a href="https://github.com" tabindex="0" target="_blank">Github</a>
+    <a href="{{ site.baseurl }}/feed.xml" tabindex="0" target="_blank">RSS</a>
+  </nav>
+
+  <div class="divider"></div>
+
+  <div id="search-container">
+    <input id="search-input" type="search" placeholder="Search homepage..." aria-label="Search homepage" autocomplete="off" />
+  </div>
+
+  {{ content }}
+
+  <footer>
+    <div class="keys" role="contentinfo" aria-label="Keyboard shortcuts">
+      <strong>Vim-like keys:</strong>  
+      j/k — scroll down/up 60px  
+      g — go to top  
+      G — go to bottom  
+      o — toggle open/close focused section  
+      O — open all sections  
+      C — close all sections  
+
+      <strong>Search keys:</strong>  
+      / — focus search input  
+      Esc — clear & blur search input
+
+      Navigate sections with Tab, use Enter or Space to toggle sections open/close.
+    </div>
+  </footer>
+
+  <div class="small-footer" aria-label="License and credits">
+    All material is for educational purposes only and reflects my own views, not those of my employer.<br>
+    Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" style="color: var(--accent); text-decoration: none;" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.  
+    Theme by <a href="https://github.com/jawadnassar/jekyll-vim-theme" style="color: var(--accent); text-decoration: none;" target="_blank" rel="noopener noreferrer">Jekyll-vim</a>.  
+  </div>
+</div>

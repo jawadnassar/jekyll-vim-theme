@@ -1,0 +1,19 @@
+name: John Doe
+title: John Doe
+tagline: Curious mind. Writes code. Breaks things. Fixes some.
+description: Curious mind. Writes code. Breaks things. Fixes some.
+url: https://jawad.ca
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: "/jekyll-vim-theme"
+
+author: John Doe
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
