@@ -23,8 +23,16 @@ layout: homepage
 {% endfor %}
 
 
-{% assign uncategorized_posts = site.posts | where_exp: "post", "post.categories == nil or post.categories == empty" %}
-{% if uncategorized_posts != empty %}
+
+{% assign uncategorized_posts = "" | split: "" %}
+
+{% for post in site.posts %}
+  {% if post.categories == empty %}
+    {% assign uncategorized_posts = uncategorized_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% if uncategorized_posts.size > 0 %}
   <section id="uncategorized">
     <details>
       <summary tabindex="0">Uncategorized</summary>
@@ -38,3 +46,4 @@ layout: homepage
     </details>
   </section>
 {% endif %}
+
