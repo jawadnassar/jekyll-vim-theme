@@ -1,4 +1,3 @@
-/* theme: https://github.com/jawadnassar/jekyll-vim-theme */
 // simplified Vim-style keyboard navigation for scrolling & toggling blog posts/pages
 const home = "/";
 document.addEventListener("keydown", e => {
